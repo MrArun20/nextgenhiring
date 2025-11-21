@@ -42,10 +42,9 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="bg-gradient-to-br from-primary to-accent p-2 rounded-lg group-hover:scale-110 transition-transform">
-              <Zap className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-xl font-semibold text-white">NextGen Hiring</span>
+            <img src="assets/nextgen.png" alt="NextGen Hiring" className="h-auto w-32"/>
+            {/* <span className="text-xl font-semibold text-white">NextGen Hiring</span> */}
+            
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
