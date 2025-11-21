@@ -9,7 +9,7 @@ export function Industries() {
   useEffect(() => {
     updatePageSEO({
       title: 'Industries We Serve - NextGen Hiring Solutions',
-      description: 'Specialized workforce solutions for E-commerce, Q-commerce, Food Delivery, Mobility, BFSI, IT & BPO sectors across India.',
+      description: 'Specialized workforce solutions for E-commerce, Q-commerce, Food Delivery, Mobility, BFSI, Non-IT & BPO sectors across India.',
       keywords: 'e-commerce staffing, q-commerce hiring, food delivery partners, IT staffing, BPO recruitment, banking jobs',
     });
   }, []);

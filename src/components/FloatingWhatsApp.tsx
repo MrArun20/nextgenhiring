@@ -5,7 +5,7 @@ export function FloatingWhatsApp() {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const handleClick = () => {
-    const phone = import.meta.env.VITE_WA_PHONE || '919876543210';
+    const phone = import.meta.env.VITE_WA_PHONE || '9542646890';
     const text = import.meta.env.VITE_WA_DEFAULT_TEXT || 'Hi, I\'m interested in NextGen Hiring Solutions';
     const encodedText = encodeURIComponent(text);
     const url = `https://wa.me/${phone}?text=${encodedText}`;
