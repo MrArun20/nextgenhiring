@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Rajesh Kumar",
+    "role": "Operations Manager",
+    "company": "Major E-commerce Platform",
+    "quote": "NextGen reduced our hiring TAT from 2 weeks to 48 hours during peak season. Their compliance management is exceptional.",
+    "rating": 5
+  },
+  {
+    "id": "2",
+    "name": "Priya Sharma",
+    "role": "HR Head",
+    "company": "Leading Q-commerce Company",
+    "quote": "We scaled from 500 to 2000 delivery partners in 3 cities within 30 days. Outstanding execution and quality.",
+    "rating": 5
+  },
+  {
+    "id": "3",
+    "name": "Amit Patel",
+    "role": "VP Talent Acquisition",
+    "company": "Global IT Services Firm",
+    "quote": "Their enterprise staffing solutions helped us fill 150+ technical positions with 95% retention after 6 months.",
+    "rating": 5
+  },
+  {
+    "id": "4",
+    "name": "Sneha Reddy",
+    "role": "Delivery Fleet Lead",
+    "company": "Food Delivery Unicorn",
+    "quote": "Professional onboarding, timely payouts, and excellent support. Our delivery partners are happier and more productive.",
+    "rating": 5
+  },
+  {
+    "id": "5",
+    "name": "Vikram Singh",
+    "role": "Regional Manager",
+    "company": "Banking & Financial Services",
+    "quote": "NextGen's understanding of BFSI compliance and quality standards sets them apart. Consistently high-quality candidates.",
+    "rating": 5
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "cs-001",
+    "client": "Leading E-commerce Platform",
+    "industry": "E-commerce",
+    "problem": "Needed 1,000 delivery executives across 5 cities in 15 days for festive season surge",
+    "solution": "Deployed dedicated sourcing teams, fast-tracked verification, conducted batch onboarding sessions",
+    "metrics": {
+      "hireTAT": { "before": "14 days", "after": "2 days", "improvement": "85%" },
+      "noShowRate": { "before": "22%", "after": "8%", "improvement": "64%" },
+      "retention90d": { "before": "68%", "after": "87%", "improvement": "28%" },
+      "fulfillmentRate": { "before": "78%", "after": "96%", "improvement": "23%" }
+    }
+  },
+  {
+    "id": "cs-002",
+    "client": "Q-commerce Unicorn",
+    "industry": "Q-commerce",
+    "problem": "High attrition (45%) and irregular attendance affecting 10-min delivery SLAs",
+    "solution": "Implemented attendance gamification, performance incentives, real-time issue resolution",
+    "metrics": {
+      "hireTAT": { "before": "7 days", "after": "1 day", "improvement": "86%" },
+      "noShowRate": { "before": "35%", "after": "12%", "improvement": "66%" },
+      "retention90d": { "before": "55%", "after": "78%", "improvement": "42%" },
+      "fulfillmentRate": { "before": "82%", "after": "94%", "improvement": "15%" }
+    }
+  },
+  {
+    "id": "cs-003",
+    "client": "Global IT Services Firm",
+    "industry": "IT & BPO",
+    "problem": "150+ technical positions unfilled for 3+ months, impacting project deliveries",
+    "solution": "Targeted campus hiring, referral programs, technical screening acceleration",
+    "metrics": {
+      "hireTAT": { "before": "45 days", "after": "18 days", "improvement": "60%" },
+      "noShowRate": { "before": "15%", "after": "5%", "improvement": "67%" },
+      "retention90d": { "before": "72%", "after": "91%", "improvement": "26%" },
+      "fulfillmentRate": { "before": "65%", "after": "92%", "improvement": "42%" }
+    }
+  },
+  {
+    "id": "cs-004",
+    "client": "Leading Private Bank",
+    "industry": "BFSI",
+    "problem": "Branch expansion required 300 customer service reps with banking knowledge in 8 cities",
+    "solution": "Domain-specific training modules, compliance certification, multi-city coordination",
+    "metrics": {
+      "hireTAT": { "before": "30 days", "after": "12 days", "improvement": "60%" },
+      "noShowRate": { "before": "18%", "after": "6%", "improvement": "67%" },
+      "retention90d": { "before": "75%", "after": "89%", "improvement": "19%" },
+      "fulfillmentRate": { "before": "70%", "after": "95%", "improvement": "36%" }
+    }
+  }
+]

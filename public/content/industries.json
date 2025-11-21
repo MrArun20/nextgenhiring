@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ecommerce",
+    "name": "E-commerce",
+    "icon": "shopping-cart",
+    "description": "Last-mile delivery excellence",
+    "bullets": [
+      "Warehouse operations staff",
+      "Delivery executives",
+      "Peak season surge support",
+      "Quality control personnel"
+    ],
+    "clients": ["Amazon", "Flipkart", "Myntra"]
+  },
+  {
+    "id": "qcommerce",
+    "name": "Q-commerce",
+    "icon": "truck",
+    "description": "Lightning-fast fulfillment teams",
+    "bullets": [
+      "10-minute delivery riders",
+      "Dark store operators",
+      "Real-time dispatch coordination",
+      "Night shift availability"
+    ],
+    "clients": ["Zepto", "Blinkit", "Swiggy Instamart"]
+  },
+  {
+    "id": "food-delivery",
+    "name": "Food Delivery",
+    "icon": "utensils",
+    "description": "Reliable delivery partners",
+    "bullets": [
+      "On-demand delivery fleet",
+      "Multi-city operations",
+      "Peak hour scalability",
+      "Customer service excellence"
+    ],
+    "clients": ["Swiggy", "Zomato", "Uber Eats"]
+  },
+  {
+    "id": "mobility",
+    "name": "Mobility",
+    "icon": "car",
+    "description": "Driver partner recruitment",
+    "bullets": [
+      "Background verification",
+      "License validation",
+      "Training & compliance",
+      "Fleet management support"
+    ],
+    "clients": ["Uber", "Ola", "Rapido"]
+  },
+  {
+    "id": "bfsi",
+    "name": "BFSI",
+    "icon": "building-2",
+    "description": "Banking & financial services talent",
+    "bullets": [
+      "Customer service representatives",
+      "Back-office operations",
+      "KYC & compliance roles",
+      "Sales & collections teams"
+    ],
+    "clients": ["ICICI Bank", "HDFC Bank", "Kotak Mahindra"]
+  },
+  {
+    "id": "it-bpo",
+    "name": "IT & BPO",
+    "icon": "monitor",
+    "description": "Skilled technology professionals",
+    "bullets": [
+      "Software developers",
+      "Technical support engineers",
+      "Data entry operators",
+      "Quality analysts"
+    ],
+    "clients": ["Wipro", "TCS", "Genpact", "Tech Mahindra", "Google"]
+  }
+]

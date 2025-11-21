@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fast-hiring",
+    "title": "Fast Hiring",
+    "description": "48-hour turnaround time from requisition to candidate deployment",
+    "icon": "zap"
+  },
+  {
+    "id": "training-onboarding",
+    "title": "Training & Onboarding",
+    "description": "Comprehensive orientation and skill development programs",
+    "icon": "users"
+  },
+  {
+    "id": "attendance-payouts",
+    "title": "Attendance & Payouts",
+    "description": "Automated tracking and timely salary disbursement",
+    "icon": "calendar-check"
+  },
+  {
+    "id": "compliance",
+    "title": "Compliance",
+    "description": "Full adherence to labor laws, ESI, PF, and regulations",
+    "icon": "shield-check"
+  },
+  {
+    "id": "sla-driven",
+    "title": "SLA-Driven",
+    "description": "Guaranteed service levels with measurable outcomes",
+    "icon": "target"
+  },
+  {
+    "id": "pan-india",
+    "title": "Pan-India Network",
+    "description": "Operations across 30+ cities with local expertise",
+    "icon": "map-pin"
+  }
+]

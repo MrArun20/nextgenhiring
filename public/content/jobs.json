@@ -1,0 +1,146 @@
+[
+  {
+    "id": "del-exec-blr-001",
+    "title": "Delivery Executive",
+    "city": "Bangalore",
+    "payMin": 18000,
+    "payMax": 25000,
+    "shift": "Day",
+    "type": "Full-time",
+    "category": "logistics",
+    "description": "Join our delivery fleet for leading e-commerce platforms",
+    "requirements": [
+      "Valid driving license",
+      "Own smartphone",
+      "Age 18-40 years",
+      "Basic English/Hindi"
+    ],
+    "applyEndpoint": "/api/apply"
+  },
+  {
+    "id": "warehouse-mum-002",
+    "title": "Warehouse Associate",
+    "city": "Mumbai",
+    "payMin": 15000,
+    "payMax": 20000,
+    "shift": "Night",
+    "type": "Full-time",
+    "category": "logistics",
+    "description": "Warehouse operations for leading e-commerce company",
+    "requirements": [
+      "10th pass minimum",
+      "Physical fitness",
+      "Willingness to work night shifts",
+      "Basic inventory management knowledge"
+    ],
+    "applyEndpoint": "/api/apply"
+  },
+  {
+    "id": "qcom-rider-del-003",
+    "title": "Q-commerce Rider",
+    "city": "Delhi",
+    "payMin": 20000,
+    "payMax": 30000,
+    "shift": "Flexible",
+    "type": "Full-time",
+    "category": "logistics",
+    "description": "High-earning opportunity with 10-minute delivery platform",
+    "requirements": [
+      "Two-wheeler with valid RC",
+      "Driving license",
+      "Smartphone (Android 8+)",
+      "Local area knowledge"
+    ],
+    "applyEndpoint": "/api/apply"
+  },
+  {
+    "id": "cust-support-hyd-004",
+    "title": "Customer Support Executive",
+    "city": "Hyderabad",
+    "payMin": 18000,
+    "payMax": 24000,
+    "shift": "Rotational",
+    "type": "Full-time",
+    "category": "enterprise",
+    "description": "BPO customer service for international clients",
+    "requirements": [
+      "Graduate in any stream",
+      "Good communication skills",
+      "Basic computer knowledge",
+      "Flexible with shifts"
+    ],
+    "applyEndpoint": "/api/apply"
+  },
+  {
+    "id": "soft-dev-pune-005",
+    "title": "Software Developer",
+    "city": "Pune",
+    "payMin": 35000,
+    "payMax": 55000,
+    "shift": "Day",
+    "type": "Full-time",
+    "category": "enterprise",
+    "description": "Full-stack development for Fortune 500 IT services firm",
+    "requirements": [
+      "BE/BTech in CS/IT",
+      "1-3 years experience",
+      "Proficiency in React, Node.js",
+      "Strong problem-solving skills"
+    ],
+    "applyEndpoint": "/api/apply"
+  },
+  {
+    "id": "bank-csr-chen-006",
+    "title": "Banking CSR",
+    "city": "Chennai",
+    "payMin": 20000,
+    "payMax": 28000,
+    "shift": "Day",
+    "type": "Full-time",
+    "category": "enterprise",
+    "description": "Customer service role in leading private bank",
+    "requirements": [
+      "Graduate with finance knowledge",
+      "Good communication",
+      "MS Office proficiency",
+      "BFSI experience preferred"
+    ],
+    "applyEndpoint": "/api/apply"
+  },
+  {
+    "id": "food-rider-kol-007",
+    "title": "Food Delivery Partner",
+    "city": "Kolkata",
+    "payMin": 16000,
+    "payMax": 24000,
+    "shift": "Flexible",
+    "type": "Part-time",
+    "category": "logistics",
+    "description": "Flexible earning opportunity with top food delivery apps",
+    "requirements": [
+      "Two-wheeler",
+      "Valid DL",
+      "Age 18+",
+      "Smartphone"
+    ],
+    "applyEndpoint": "/api/apply"
+  },
+  {
+    "id": "data-entry-jai-008",
+    "title": "Data Entry Operator",
+    "city": "Jaipur",
+    "payMin": 14000,
+    "payMax": 18000,
+    "shift": "Day",
+    "type": "Full-time",
+    "category": "enterprise",
+    "description": "Back-office operations for IT services company",
+    "requirements": [
+      "12th pass minimum",
+      "Typing speed 30+ WPM",
+      "MS Excel knowledge",
+      "Attention to detail"
+    ],
+    "applyEndpoint": "/api/apply"
+  }
+]
