@@ -60,7 +60,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-gray-400 text-sm">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>contact@nextgenhiring.com</span>
+                <span>contact@nextgenhiring.co.in</span>
               </li>
               <li className="flex items-start space-x-2 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
@@ -68,7 +68,8 @@ export function Footer() {
               </li>
               <li className="flex items-start space-x-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Pan-India Operations</span>
+                <span>Matrix IT Hub, Near Temple Bus Stop, KPHB Phase 2, Kukatpally
+Hyderabad, Telangana, India, 500072</span>
               </li>
             </ul>
 

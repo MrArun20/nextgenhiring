@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import * as Icons from 'lucide-react';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
 
-interface Industry {
+export interface Industry {
   id: string;
   name: string;
   icon: string;
@@ -18,6 +18,28 @@ interface IndustryCardsProps {
 export function IndustryCards({ industries }: IndustryCardsProps) {
   const prefersReducedMotion = usePrefersReducedMotion();
 
+  const clientLogoMap: Record<string, string> = {
+  Amazon: "public/logos/Amazon.jpg",
+  SwiggyInstamart:"public/logos/Swiggy Instamart.jpg",
+  Flipkart: "public/logos/Flipkart.jpg",
+  Swiggy: "public/logos/swiggy.jpg",
+  Zomato: "public/logos/zomato.jpg",
+  Uber:"public/logos/uber.jpg",
+  Zepto:"public/logos/Zepto.jpg",
+  Blinkit:"public/logos/Blinkit.jpg",
+  Genpact:"public/logos/Genpact.png",
+  Ola:"public/logos/Ola.png",
+  Rapido:"public/logos/Rapido.jpg",
+  Kotak:"public/logos/KotakBank.jpg",
+  Wipro:"public/logos/Wipro.jpg",
+   TCS:"public/logos/TCS.jpg",
+    "Uber Eats":"public/logos/Uber Eats.jpg",
+    "Swiggy Instamart":"public/logos/Swiggy Instamart.jpg",
+      "HDFC Bank":"public/logos/HDFC.png",
+      "ICICI Bank":"public/logos/ICICI.jpg",
+      "Kotak Mahindra":"public/logos/KotakBank.jpg",
+   Myntra:"public/logos/Myntra.png"
+};
   const getIcon = (iconName: string) => {
     const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
       'shopping-cart': Icons.ShoppingCart,
@@ -72,13 +94,27 @@ export function IndustryCards({ industries }: IndustryCardsProps) {
                     ))}
                   </ul>
 
-                  <div className="flex flex-wrap gap-2">
-                    {industry.clients.slice(0, 3).map((client) => (
-                      <span key={client} className="text-xs px-2 py-1 bg-background/50 rounded text-gray-500 border border-gray-800">
-                        {client}
-                      </span>
-                    ))}
-                  </div>
+                 <div className="flex flex-wrap gap-3 mt-2">
+  {industry.clients.slice(0, 3).map((client) => {
+    const logo = clientLogoMap[client]; 
+
+    return logo ? (
+      <img
+        key={client}
+        src={logo}
+        alt={client}
+        className="h-8 w-auto object-contain rounded opacity-75 hover:opacity-100 hover:scale-105 transition"
+      />
+    ) : (
+      <span
+        key={client}
+        className="text-xs px-2 py-1 bg-background/50 rounded text-gray-500 border border-gray-800"
+      >
+        {client}
+      </span>
+    );
+  })}
+</div>
                 </div>
               </motion.div>
             );

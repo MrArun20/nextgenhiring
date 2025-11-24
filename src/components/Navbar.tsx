@@ -42,25 +42,39 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2 group">
-            <img src="/assets/nextgen.png" alt="NextGen Hiring" className="h-auto w-32"/>
+            <img src="public/assests/nextgen.png" alt="NextGen Hiring" className="h-auto w-52"/>
             {/* <span className="text-xl font-semibold text-white">NextGen Hiring</span> */}
             
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={cn(
-                  'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
-                  location.pathname === link.to
-                    ? 'text-accent bg-accent/10'
-                    : 'text-gray-300 hover:text-white hover:bg-surface/50'
-                )}
-              >
-                {link.label}
-              </Link>
+              // <Link
+              //   key={link.to}
+              //   to={link.to}
+              //   className={cn(
+              //     'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
+              //     location.pathname === link.to
+              //       ? 'text-accent bg-accent/10'
+              //       : 'text-gray-300 hover:text-white hover:bg-surface/50'
+              //   )}
+              // >
+              //   {link.label}
+              // </Link>
+
+             <Link
+  key={link.to}
+  to={link.to}
+className={cn(
+  'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border-b-2 border-transparent',
+  location.pathname === link.to
+    ? 'text-white border-yellow-400'                 // ACTIVE → white text + underline stays
+    : 'text-yellow-400 hover:text-white hover:border-yellow-400' // INACTIVE → yellow text, white only on hover
+)}
+>
+  {link.label}
+</Link>
+
             ))}
           </div>
 

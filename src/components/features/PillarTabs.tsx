@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Truck, Monitor } from 'lucide-react';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
+import { Clients } from '../../routes/Clients';
 
 export function PillarTabs() {
   const [activeTab, setActiveTab] = useState<'logistics' | 'enterprise'>('logistics');
@@ -24,7 +25,18 @@ export function PillarTabs() {
         'Compliance and documentation',
         'Performance monitoring and support',
       ],
-      clients: ['Amazon', 'Flipkart', 'Swiggy', 'Zomato', 'Zepto', 'Uber', 'Ola'],
+
+      clients: [{ name: "Uber", logo: "public/logos/uber.jpg" },
+      { name: "Rapiod", logo: "public/logos/Rapido.jpg" },
+      { name: "Zepto", logo: "public/logos/Zepto.jpg" },
+      { name: "Amazon", logo: "public/logos/Amazon.jpg" },
+      { name: "Flipkart", logo: "public/logos/Flipkart.jpg" },
+      { name: "Zomato", logo: "public/logos/Zomato.jpg" },
+      { name: "Swiggy", logo: "public/logos/Swiggy.jpg" },
+      { name: "Blinkit", logo: "public/logos/Blinkit.jpg" },
+      { name: "SBI", logo: "public/logos/SBI.jpg" },
+      { name: "ICICI", logo: "public/logos/ICICI.jpg" },
+      ],
     },
     enterprise: {
       title: 'IT, BPO, and Banking Talent',
@@ -109,14 +121,26 @@ export function PillarTabs() {
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Trusted By</h4>
               <div className="flex flex-wrap gap-3">
-                {activeContent.clients.map((client) => (
-                  <div
-                    key={client}
-                    className="px-4 py-2 bg-background/50 rounded-lg text-gray-300 text-sm border border-gray-800"
-                  >
-                    {client}
-                  </div>
-                ))}
+                {activeContent.clients.map((client) => {
+  const logo = typeof client === "string" ? null : client.logo;
+  const name = typeof client === "string" ? client : client.name;
+
+  return (
+    <div key={name} className="px-4 py-2 bg-background/50 rounded-lg text-gray-300 text-sm">
+      {logo ? (
+        <img
+          src={logo}
+          alt={name}
+          className="h-12 w-auto object-contain border border-gray-300 rounded-lg opacity-80 
+            hover:opacity-100 hover:shadow-lg hover:border-gray-500 
+            transition-transform duration-300 hover:scale-110 cursor-pointer"
+        />
+      ) : (
+        <span className="text-gray-400">{name}</span> 
+      )}
+    </div>
+  );
+})}
               </div>
             </div>
           </div>

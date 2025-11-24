@@ -11,13 +11,19 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', size = 'md', isLoading, children, disabled, ...props }, ref) => {
     const baseStyles = 'inline-flex items-center justify-center rounded-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:cursor-not-allowed';
 
-    const variants = {
-      primary: 'bg-primary hover:bg-primary-600 text-white shadow-lg shadow-primary/25',
-      secondary: 'bg-secondary hover:bg-secondary-600 text-white shadow-lg shadow-secondary/25',
-      outline: 'border-2 border-accent text-accent hover:bg-accent hover:text-background',
-      ghost: 'text-accent hover:bg-accent/10',
-    };
+    // const variants = {
+    //   primary: 'bg-primary hover:bg-yellow-600 text-white shadow-lg shadow-gray/25',
+    //   secondary: 'bg-secondary hover:bg-secondary-600 text-white shadow-lg shadow-secondary/25',
+    //   outline: 'border-2 border-accent text-accent hover:bg-accent hover:text-background',
+    //   ghost: 'text-accent hover:bg-accent/10',
+    // };
 
+    const variants = {
+  primary: 'bg-white text-yellow-600 border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white shadow-lg shadow-yellow-300/40',
+  secondary: 'bg-yellow-500 text-white hover:bg-yellow-600 shadow-lg shadow-yellow-300/40',
+  outline: 'bg-white border-2 border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-white',
+  ghost: 'text-yellow-600 hover:bg-yellow-100',
+};
     const sizes = {
       sm: 'px-4 py-2 text-sm',
       md: 'px-6 py-3 text-base',
