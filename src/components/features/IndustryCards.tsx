@@ -19,26 +19,26 @@ export function IndustryCards({ industries }: IndustryCardsProps) {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const clientLogoMap: Record<string, string> = {
-  Amazon: "/asserts/logos/Amazon.jpg",
-  SwiggyInstamart:"/asserts/logos/Swiggy Instamart.jpg",
-  Flipkart: "/asserts/logos/Flipkart.jpg",
-  Swiggy: "/asserts/logos/swiggy.jpg",
-  Zomato: "/asserts/logos/zomato.jpg",
-  Uber:"/asserts/logos/uber.jpg",
-  Zepto:"/asserts/logos/Zepto.jpg",
-  Blinkit:"/asserts/logos/Blinkit.jpg",
-  Genpact:"/asserts/logos/Genpact.png",
-  Ola:"/asserts/logos/Ola.png",
-  Rapido:"/asserts/logos/Rapido.jpg",
-  Kotak:"/asserts/logos/KotakBank.jpg",
-  Wipro:"/asserts/logos/Wipro.jpg",
-   TCS:"/asserts/logos/TCS.jpg",
-    "Uber Eats":"/asserts/logos/Uber Eats.jpg",
-    "Swiggy Instamart":"/asserts/logos/Swiggy Instamart.jpg",
-      "HDFC Bank":"/asserts/logos/HDFC.png",
-      "ICICI Bank":"/asserts/logos/ICICI.jpg",
-      "Kotak Mahindra":"/asserts/logos/KotakBank.jpg",
-   Myntra:"/asserts/logos/Myntra.png"
+  Amazon: "/assests/logos/Amazon.jpg",
+  SwiggyInstamart:"/assests/logos/Swiggy Instamart.jpg",
+  Flipkart: "/assests/logos/Flipkart.jpg",
+  Swiggy: "/assests/logos/swiggy.jpg",
+  Zomato: "/assests/logos/zomato.jpg",
+  Uber:"/assests/logos/uber.jpg",
+  Zepto:"/assests/logos/Zepto.jpg",
+  Blinkit:"/assests/logos/Blinkit.jpg",
+  Genpact:"/assests/logos/Genpact.png",
+  Ola:"/assests/logos/Ola.png",
+  Rapido:"/assests/logos/Rapido.jpg",
+  Kotak:"/assests/logos/KotakBank.jpg",
+  Wipro:"/assests/logos/Wipro.jpg",
+   TCS:"/assests/logos/TCS.jpg",
+    "Uber Eats":"/assests/logos/Uber Eats.jpg",
+    "Swiggy Instamart":"/assests/logos/Swiggy Instamart.jpg",
+      "HDFC Bank":"/assests/logos/HDFC.png",
+      "ICICI Bank":"/assests/logos/ICICI.jpg",
+      "Kotak Mahindra":"/assests/logos/KotakBank.jpg",
+   Myntra:"/assests/logos/Myntra.png"
 };
   const getIcon = (iconName: string) => {
     const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
