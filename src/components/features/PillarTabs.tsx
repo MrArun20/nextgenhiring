@@ -26,10 +26,10 @@ export function PillarTabs() {
         'Performance monitoring and support',
       ],
 
-      clients: [{ name: "Uber", logo: "/assests/Uber.jpg" },
+      clients: [{ name: "Uber", logo: "/assests/uber.jpg" },
       { name: "Rapiod", logo: "/assests/Rapido.jpg" },
       { name: "Zepto", logo: "/assests/Zepto.jpg" },
-      { name: "Amazon", logo: "/assests/Amazon.jpg" },
+      { name: "Amazon", logo: "/assests/amazon.jpg" },  
       { name: "Flipkart", logo: "/assests/Flipkart.jpg" },
       { name: "Zomato", logo: "/assests/Zomato.jpg" },
       { name: "Swiggy", logo: "/assests/Swiggy.jpg" },
