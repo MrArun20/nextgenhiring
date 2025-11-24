@@ -20,25 +20,25 @@ export function IndustryCards({ industries }: IndustryCardsProps) {
 
   const clientLogoMap: Record<string, string> = {
   Amazon: "/assets/amazon.jpg",
-  SwiggyInstamart:"/assets/Swiggy Instamart.jpg",
-  Flipkart: "/assets/Flipkart.jpg",
+  SwiggyInstamart:"/assets/swiggy instamart.jpg",
+  Flipkart: "/assets/flipkart.jpg",
   Swiggy: "/assets/swiggy.jpg",
   Zomato: "/assets/zomato.jpg",
   Uber:"/assets/uber.jpg",
-  Zepto:"/assets/Zepto.jpg",
-  Blinkit:"/assets/Blinkit.jpg",
-  Genpact:"/assets/Genpact.png",
-  Ola:"/assets/Ola.png",
-  Rapido:"/assets/Rapido.jpg",
-  Kotak:"/assets/KotakBank.jpg",
-  Wipro:"/assets/Wipro.jpg",
-   TCS:"/assets/TCS.jpg",
-    "Uber Eats":"/assets/Uber Eats.jpg",
-    "Swiggy Instamart":"/assets/Swiggy Instamart.jpg",
-      "HDFC Bank":"/assets/HDFC.png",
-      "ICICI Bank":"/assets/ICICI.jpg",
-      "Kotak Mahindra":"/assets/KotakBank.jpg",
-   Myntra:"/assets/Myntra.png"
+  Zepto:"/assets/zepto.jpg",
+  Blinkit:"/assets/blinkit.jpg",
+  Genpact:"/assets/genpact.png",
+  Ola:"/assets/ola.png",
+  Rapido:"/assets/rapido.jpg",
+  Kotak:"/assets/kotakbank.jpg",
+  Wipro:"/assets/wipro.jpg",
+   TCS:"/assets/tcs.jpg",
+    "Uber Eats":"/assets/uber eats.jpg",
+    "Swiggy Instamart":"/assets/swiggy instamart.jpg",
+      "HDFC Bank":"/assets/hdfc.png",
+      "ICICI Bank":"/assets/icici.jpg",
+      "Kotak Mahindra":"/assets/kotakbank.jpg",
+   Myntra:"/assets/myntra.png"
 };
   const getIcon = (iconName: string) => {
     const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
