@@ -32,7 +32,7 @@ export function PillarTabs() {
       { name: "amazon", logo: "/assets/amazon.jpg" },  
       { name: "flipkart", logo: "/assets/flipkart.jpg" },
       { name: "zomato", logo: "/assets/zomato.jpg" },
-      { name: "swiggy", logo: "/assets/zwiggy.jpg" },
+      { name: "swiggy", logo: "/assets/swiggy.jpg" },
       { name: "blinkit", logo: "/assets/blinkit.jpg" },
       { name: "sbi", logo: "/assets/sbi.jpg" },
       { name: "icici", logo: "/assets/icici.jpg" },
