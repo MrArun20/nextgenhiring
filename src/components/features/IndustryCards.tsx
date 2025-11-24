@@ -19,26 +19,26 @@ export function IndustryCards({ industries }: IndustryCardsProps) {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const clientLogoMap: Record<string, string> = {
-  Amazon: "/logos/Amazon.jpg",
-  SwiggyInstamart:"/logos/Swiggy Instamart.jpg",
-  Flipkart: "/logos/Flipkart.jpg",
-  Swiggy: "/logos/swiggy.jpg",
-  Zomato: "/logos/zomato.jpg",
-  Uber:"/logos/uber.jpg",
-  Zepto:"/logos/Zepto.jpg",
-  Blinkit:"/logos/Blinkit.jpg",
-  Genpact:"/logos/Genpact.png",
-  Ola:"/logos/Ola.png",
-  Rapido:"/logos/Rapido.jpg",
-  Kotak:"/logos/KotakBank.jpg",
-  Wipro:"/logos/Wipro.jpg",
-   TCS:"/logos/TCS.jpg",
-    "Uber Eats":"/logos/Uber Eats.jpg",
-    "Swiggy Instamart":"/logos/Swiggy Instamart.jpg",
-      "HDFC Bank":"/logos/HDFC.png",
-      "ICICI Bank":"/logos/ICICI.jpg",
-      "Kotak Mahindra":"/logos/KotakBank.jpg",
-   Myntra:"/logos/Myntra.png"
+  Amazon: "/asserts/logos/Amazon.jpg",
+  SwiggyInstamart:"/asserts/logos/Swiggy Instamart.jpg",
+  Flipkart: "/asserts/logos/Flipkart.jpg",
+  Swiggy: "/asserts/logos/swiggy.jpg",
+  Zomato: "/asserts/logos/zomato.jpg",
+  Uber:"/asserts/logos/uber.jpg",
+  Zepto:"/asserts/logos/Zepto.jpg",
+  Blinkit:"/asserts/logos/Blinkit.jpg",
+  Genpact:"/asserts/logos/Genpact.png",
+  Ola:"/asserts/logos/Ola.png",
+  Rapido:"/asserts/logos/Rapido.jpg",
+  Kotak:"/asserts/logos/KotakBank.jpg",
+  Wipro:"/asserts/logos/Wipro.jpg",
+   TCS:"/asserts/logos/TCS.jpg",
+    "Uber Eats":"/asserts/logos/Uber Eats.jpg",
+    "Swiggy Instamart":"/asserts/logos/Swiggy Instamart.jpg",
+      "HDFC Bank":"/asserts/logos/HDFC.png",
+      "ICICI Bank":"/asserts/logos/ICICI.jpg",
+      "Kotak Mahindra":"/asserts/logos/KotakBank.jpg",
+   Myntra:"/asserts/logos/Myntra.png"
 };
   const getIcon = (iconName: string) => {
     const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
