@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Truck, Monitor } from 'lucide-react';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
-import { Clients } from '../../routes/Clients';
+// import { Clients } from '../../routes/Clients';
 
 export function PillarTabs() {
   const [activeTab, setActiveTab] = useState<'logistics' | 'enterprise'>('logistics');
