@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Truck, Monitor } from 'lucide-react';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
-// import { Clients } from '../../routes/Clients';
+import { Clients } from '../../routes/Clients';
 
 export function PillarTabs() {
   const [activeTab, setActiveTab] = useState<'logistics' | 'enterprise'>('logistics');
@@ -26,17 +26,18 @@ export function PillarTabs() {
         'Performance monitoring and support',
       ],
 
-      clients: [{ name: "uber", logo: "/assets/uber.jpg" },
-      { name: "rapido", logo: "/assets/rapido.jpg" },
-      { name: "zepto", logo: "/assets/zepto.jpg" },
-      { name: "amazon", logo: "/assets/amazon.jpg" },  
-      { name: "flipkart", logo: "/assets/flipkart.jpg" },
-      { name: "zomato", logo: "/assets/zomato.jpg" },
-      { name: "swiggy", logo: "/assets/swiggy.jpg" },
-      { name: "blinkit", logo: "/assets/blinkit.jpg" },
-      { name: "sbi", logo: "/assets/sbi.jpg" },
-      { name: "icici", logo: "/assets/icici.jpg" },
+      clients: [{ name: "uber", logo: "assets/uber.jpg" },
+      { name: "rapido", logo: "assets/rapido.jpg" },
+      { name: "zepto", logo: "assets/zepto.jpg" },
+      { name: "amazon", logo: "assets/amazon.jpg" },  
+      { name: "flipkart", logo: "assets/flipkart.jpg" },
+      { name: "zomato", logo: "assets/zomato.jpg" },
+      { name: "swiggy", logo: "assets/swiggy.jpg" },
+      { name: "blinkit", logo: "assets/blinkit.jpg" },
+      { name: "sbi", logo: "assets/sbi.jpg" },
+      { name: "icici", logo: "assets/icici.jpg" },
       ],
+ 
     },
     enterprise: {
       title: 'IT, BPO, and Banking Talent',
