@@ -20,7 +20,7 @@ export function IndustryCards({ industries }: IndustryCardsProps) {
 
   const clientLogoMap: Record<string, string> = {
   Amazon: "/assets/amazon.jpg",
-  SwiggyInstamart:"/assets/swiggy-instamart.jpg",
+  SwiggyInstamart:"/assets/swiggy instamart.jpg",
   Flipkart: "/assets/flipkart.jpg",
   Swiggy: "/assets/swiggy.jpg",
   Zomato: "/assets/zomato.jpg",
@@ -33,8 +33,8 @@ export function IndustryCards({ industries }: IndustryCardsProps) {
   Kotak:"/assets/kotakbank.jpg",
   Wipro:"/assets/wipro.jpg",
    TCS:"/assets/tcs.jpg",
-    "Uber Eats":"/assets/uber-eats.jpg",
-    "Swiggy Instamart":"/assets/swiggy-instamart.jpg",
+    "Uber Eats":"/assets/uber eats.jpg",
+    "Swiggy Instamart":"/assets/swiggy instamart.jpg",
       "HDFC Bank":"/assets/hdfc.png",
       "ICICI Bank":"/assets/icici.jpg",
       "Kotak Mahindra":"/assets/kotakbank.jpg",
