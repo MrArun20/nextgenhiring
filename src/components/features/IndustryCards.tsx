@@ -19,26 +19,26 @@ export function IndustryCards({ industries }: IndustryCardsProps) {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const clientLogoMap: Record<string, string> = {
-  Amazon: "/Logos/Amazon.jpg",
-  SwiggyInstamart:"/Logos/Swiggy Instamart.jpg",
-  Flipkart: "/Logos/Flipkart.jpg",
-  Swiggy: "/Logos/swiggy.jpg",
-  Zomato: "/Logos/zomato.jpg",
-  Uber:"/Logos/uber.jpg",
-  Zepto:"/Logos/Zepto.jpg",
-  Blinkit:"/Logos/Blinkit.jpg",
-  Genpact:"/Logos/Genpact.png",
-  Ola:"/Logos/Ola.png",
-  Rapido:"/Logos/Rapido.jpg",
-  Kotak:"/Logos/KotakBank.jpg",
-  Wipro:"/Logos/Wipro.jpg",
-   TCS:"/Logos/TCS.jpg",
-    "Uber Eats":"/Logos/Uber Eats.jpg",
-    "Swiggy Instamart":"/Logos/Swiggy Instamart.jpg",
-      "HDFC Bank":"/Logos/HDFC.png",
-      "ICICI Bank":"/Logos/ICICI.jpg",
-      "Kotak Mahindra":"/Logos/KotakBank.jpg",
-   Myntra:"/Logos/Myntra.png"
+  Amazon: "public/Logos/Amazon.jpg",
+  SwiggyInstamart:"public/Logos/Swiggy Instamart.jpg",
+  Flipkart: "public/Logos/Flipkart.jpg",
+  Swiggy: "public/Logos/swiggy.jpg",
+  Zomato: "public/Logos/zomato.jpg",
+  Uber:"public/Logos/uber.jpg",
+  Zepto:"public/Logos/Zepto.jpg",
+  Blinkit:"public/Logos/Blinkit.jpg",
+  Genpact:"public/Logos/Genpact.png",
+  Ola:"public/Logos/Ola.png",
+  Rapido:"public/Logos/Rapido.jpg",
+  Kotak:"public/Logos/KotakBank.jpg",
+  Wipro:"public/Logos/Wipro.jpg",
+   TCS:"public/Logos/TCS.jpg",
+    "Uber Eats":"public/Logos/Uber Eats.jpg",
+    "Swiggy Instamart":"public/Logos/Swiggy Instamart.jpg",
+      "HDFC Bank":"public/Logos/HDFC.png",
+      "ICICI Bank":"public/Logos/ICICI.jpg",
+      "Kotak Mahindra":"public/Logos/KotakBank.jpg",
+   Myntra:"public/Logos/Myntra.png"
 };
   const getIcon = (iconName: string) => {
     const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
