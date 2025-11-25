@@ -50,7 +50,16 @@ export function PillarTabs() {
         'Compliance and onboarding',
         'Retention management',
       ],
-      clients: ['Google', 'Wipro', 'TCS', 'Genpact', 'Tech Mahindra', 'ICICI Bank', 'HDFC Bank'],
+      clients: [
+        {name:"google",logo:"/assets/google.jpg"},
+        {name:"wipro",logo:"/assets/wipro.jpg"},
+        {name:"tcs",logo:"/assets/tcs.jpg"},
+        {name:"google",logo:"/assets/google.jpg"},
+        {name:"icici",logo:"/assets/icici.jpg"},
+        {name:"hdfc",logo:"/assets/hdfc.png"},
+         {name:"genpact",logo:"/assets/genpact.png"},
+        {name:"techmahindra",logo:"/assets/techmahindra.png"}
+      ],
     },
   };
 

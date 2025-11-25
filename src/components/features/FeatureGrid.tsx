@@ -32,17 +32,22 @@ export function FeatureGrid({ features }: FeatureGridProps) {
                 whileInView={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative p-6 rounded-2xl bg-surface/50 backdrop-blur-sm border border-gray-800 hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/10"
+                // className="group relative p-6 rounded-2xl bg-surface/50 backdrop-blur-sm border border-gray-800 hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/10"
+                className="group relative p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-800 
+                hover:bg-white hover:border-yellow-400 transition-all duration-300 
+                hover:shadow-xl hover:shadow-yellow-200 cursor-pointer"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-secondary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-100/20 to-yellow-50/20 
+                  rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"  />
 
                 <div className="relative">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="w-6 h-6 text-white" />
-                  </div>
+                  
+                <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 border-2 border-yellow-400">
+  <IconComponent className="w-6 h-6 text-yellow-400" />
+</div>
 
-                  <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                  <h3 className="text-gray-800 group-hover:text-yellow-400 transition-colors duration-300">{feature.title}</h3>
+                  <p className="text-gray-600 group-hover:text-yellow-500 transition-colors duration-300">{feature.description}</p>
                 </div>
               </motion.div>
             );
