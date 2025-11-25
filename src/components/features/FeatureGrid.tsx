@@ -21,9 +21,16 @@ export function FeatureGrid({ features }: FeatureGridProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => {
-            const IconComponent = (Icons as Record<string, React.ComponentType<{ className?: string }>>)[
-              feature.icon.split('-').map((word, i) => i === 0 ? word.charAt(0).toUpperCase() + word.slice(1) : word.charAt(0).toUpperCase() + word.slice(1)).join('')
-            ] || Icons.Box;
+            // const IconComponent = (Icons as Record<string, React.ComponentType<{ className?: string }>>)[
+            //   feature.icon.split('-').map((word, i) => i === 0 ? word.charAt(0).toUpperCase() + word.slice(1) : word.charAt(0).toUpperCase() + word.slice(1)).join('')
+            // ] || Icons.Box;
+            const IconComponent =
+  (Icons as unknown as Record<string, React.FC<{ className?: string }>>)[
+    feature.icon
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join('')
+  ] || Icons.Box;
 
             return (
               <motion.div
@@ -32,7 +39,6 @@ export function FeatureGrid({ features }: FeatureGridProps) {
                 whileInView={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                // className="group relative p-6 rounded-2xl bg-surface/50 backdrop-blur-sm border border-gray-800 hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/10"
                 className="group relative p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-800 
                 hover:bg-white hover:border-yellow-400 transition-all duration-300 
                 hover:shadow-xl hover:shadow-yellow-200 cursor-pointer"

@@ -26,7 +26,9 @@ function StatItem({ label, value, suffix = '', prefix = '' }: Stat) {
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <div className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-accent to-secondary mb-2">
+     <div className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-yellow-300 drop-shadow-[0_0_10px_rgba(255,255,100,0.4)] mb-2">
+
+
         {prefix}{count}{suffix}
       </div>
       <div className="text-sm sm:text-base text-gray-400 font-medium">{label}</div>

@@ -9,15 +9,18 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
+           
             <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-gradient-to-br from-primary to-accent p-2 rounded-lg">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-lg font-semibold text-white">NextGen Hiring</span>
-            </div>
+  <img
+    src="/assets/nextgen.png"
+    alt="Logo"
+    className="w-29 h-8 object-contain"
+  />
+</div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Your trusted staffing and workforce delivery partner across India. We hire, train, and deploy at scale.
             </p>
+            <p className="text-gray-400 text-sm leading-relaxed font-semibold pt-5">CEO : Sampath Nomula</p>
           </div>
 
           <div>
@@ -57,30 +60,56 @@ export function Footer() {
 
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <ul className="space-y-3">
+            {/* <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-gray-400 text-sm">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>contact@nextgenhiring.co.in</span>
               </li>
               <li className="flex items-start space-x-2 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 9542646890</span>
               </li>
               <li className="flex items-start space-x-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>Matrix IT Hub, Near Temple Bus Stop, KPHB Phase 2, Kukatpally
 Hyderabad, Telangana, India, 500072</span>
               </li>
-            </ul>
+            </ul> */}
+            <ul className="space-y-3">
+  <li className="flex items-start space-x-2 text-gray-400 text-sm">
+    <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
+    <a href="mailto:contact@nextgenhiring.co.in" className="hover:text-yellow-400 transition-colors">
+      contact@nextgenhiring.co.in
+    </a>
+  </li>
+  <li className="flex items-start space-x-2 text-gray-400 text-sm">
+    <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
+    <a href="tel:+919542646890" className="hover:text-yellow-400 transition-colors">
+      +91 9542646890
+    </a>
+  </li>
+  <li className="flex items-start space-x-2 text-gray-400 text-sm">
+    <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Matrix+IT+Hub,+Near+Temple+Bus+Stop,+KPHB+Phase+2,+Kukatpally,+Hyderabad,+Telangana,+India,+500072"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-yellow-400 transition-colors"
+    >
+      Matrix IT Hub, Near Temple Bus Stop, KPHB Phase 2, Kukatpally,
+      Hyderabad, Telangana, India, 500072
+    </a>
+  </li>
+</ul>
 
             <div className="flex space-x-3 mt-4">
-              <a href="#" className="text-gray-400 hover:text-accent transition-colors" aria-label="LinkedIn">
+              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-accent transition-colors" aria-label="Twitter">
+              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors" aria-label="Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-accent transition-colors" aria-label="Facebook">
+              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>

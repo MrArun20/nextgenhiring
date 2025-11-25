@@ -48,21 +48,23 @@ export function Hero({ title, subtitle, primaryCTA, secondaryCTA }: HeroProps) {
 
         <motion.h1
           variants={prefersReducedMotion ? {} : item}
-          className="text-4xl sm:text-5xl lg:text-7xl font-semibold text-white mb-6 leading-tight"
+          // className="text-2xl sm:text-1xl lg:text-3xl font-semibold text-white mb-6 leading-tight"
+          className="text-3xl sm:text-4xl lg:text-3xl font-bold text-white mb-12 pt-5 leading-tight tracking-tight drop-shadow-sm"
+
         >
           {title}
         </motion.h1>
 
         <motion.p
           variants={prefersReducedMotion ? {} : item}
-          className="text-lg sm:text-xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+          className="text-lg sm:text-xl text-gray-300 mb-10 max-w-3xl  mx-auto leading-relaxed"
         >
           {subtitle}
         </motion.p>
 
         <motion.div
           variants={prefersReducedMotion ? {} : item}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row  pt-10 items-center justify-center gap-7"
         >
           {primaryCTA && (
             <Link to={primaryCTA.to}>

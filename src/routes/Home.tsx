@@ -8,6 +8,7 @@ import { PillarTabs } from '../components/features/PillarTabs';
 import { TestimonialCarousel } from '../components/features/TestimonialCarousel';
 import { CTASection } from '../components/features/CTASection';
 import { updatePageSEO } from '../lib/seo';
+import { LogoScroller } from '../components/features/LogoScorller';
 
 export function Home() {
   useEffect(() => {
@@ -38,12 +39,13 @@ export function Home() {
   return (
     <>
       <Hero
-        title="We hire, train, and deploy at scale."
+        title="Join Our Team Today ! Looking For Better , Working For The Better , No Regrets When You Join Our Team , Free Training  &  Placement Services..."
         subtitle="Delivery partners for e-commerce. Skilled staff for enterprise. SLA-driven outcomes, pan-India."
         primaryCTA={{ text: 'Hire Talent', to: '/contact' }}
         secondaryCTA={{ text: 'Join as Candidate', to: '/jobs' }}
       />
 
+   <LogoScroller/>
       <StatsBand stats={stats} />
 
       {features && <FeatureGrid features={features} />}
