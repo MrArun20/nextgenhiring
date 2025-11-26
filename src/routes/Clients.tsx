@@ -54,8 +54,10 @@ export function Clients() {
               const Icon = sla.icon;
               return (
                 <div key={index} className="text-center p-6 bg-surface/50 rounded-xl border border-gray-800">
-                  <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-white" />
+
+
+                  <div className="w-12 h-12 mx-auto mb-4 rounded-lg bg-white border border-yellow-500 text-yellow-500 flex items-center justify-center">
+                    <Icon className="w-6 h-6 text-yellow" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">{sla.title}</h3>
                   <p className="text-gray-400 text-sm">{sla.description}</p>

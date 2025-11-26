@@ -34,7 +34,7 @@ export function Footer() {
                 { to: '/about', label: 'About Us' },
               ].map((link) => (
                 <li key={link.to}>
-                  <Link to={link.to} className="text-gray-400 hover:text-accent transition-colors text-sm">
+                  <Link to={link.to} className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -46,12 +46,12 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/legal/privacy" className="text-gray-400 hover:text-accent transition-colors text-sm">
+                <Link to="/legal/privacy" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/legal/terms" className="text-gray-400 hover:text-accent transition-colors text-sm">
+                <Link to="/legal/terms" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
                   Terms of Service
                 </Link>
               </li>

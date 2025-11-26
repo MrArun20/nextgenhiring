@@ -45,8 +45,8 @@ export function About() {
               const Icon = value.icon;
               return (
                 <div key={index} className="text-center p-6">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-white border border-yellow-500 text-yellow-500 flex items-center justify-center">
+                    <Icon className="w-8 h-8 text-yellow" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-3">{value.title}</h3>
                   <p className="text-gray-400 leading-relaxed">{value.description}</p>

@@ -40,7 +40,21 @@ function PageTransition({ children }: { children: React.ReactNode }) {
         exit={prefersReducedMotion ? {} : { opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
       >
-        {children}
+        {/* {children} */}
+         <Suspense fallback={<LoadingFallback />}>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/jobs" element={<Jobs />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/legal/privacy" element={<Privacy />} />
+          <Route path="/legal/terms" element={<Terms />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
       </motion.div>
     </AnimatePresence>
   );
@@ -66,7 +80,7 @@ function AppContent() {
           <Suspense fallback={<LoadingFallback />}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
+              {/* <Route path="/services" element={<Services />} /> */}
               <Route path="/industries" element={<Industries />} />
               <Route path="/jobs" element={<Jobs />} />
               <Route path="/clients" element={<Clients />} />

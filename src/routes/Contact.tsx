@@ -103,32 +103,35 @@ export function Contact() {
 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-lg bg-white border border-yellow-500 text-yellow-500 flex items-center justify-center flex-shrink-0">
+
+                      <Mail className="w-6 h-6 text-yellow" />
                     </div>
                     <div>
                       <div className="text-gray-400 text-sm mb-1">Email</div>
-                      <a href="mailto:contact@nextgenhiring.co.in" className="text-white hover:text-accent transition-colors">
+                      <a href="mailto:contact@nextgenhiring.co.in" className="text-white hover:text-yellow-500 transition-colors">
                         contact@nextgenhiring.co.in
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-lg bg-white border border-yellow-500 text-yellow-500 flex items-center justify-center flex-shrink-0">
+
+                      <Phone className="w-6 h-6 text-yellow" />
                     </div>
                     <div>
                       <div className="text-gray-400 text-sm mb-1">Phone</div>
-                      <a href="tel:+919876543210" className="text-white hover:text-accent transition-colors">
-                        +91 98765 43210
+                      <a href="tel:+91 9542646890" className="text-white hover:text-yellow-500 transition-colors">
+                        +91 9542646890
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-lg bg-white border border-yellow-500 text-yellow-500 flex items-center justify-center flex-shrink-0">
+
+                      <MapPin className="w-6 h-6 text-yellow" />
                     </div>
                     <div>
                       <div className="text-gray-400 text-sm mb-1">Locations</div>

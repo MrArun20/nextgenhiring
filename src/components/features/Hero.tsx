@@ -40,15 +40,17 @@ export function Hero({ title, subtitle, primaryCTA, secondaryCTA }: HeroProps) {
         animate="show"
       >
         <motion.div variants={prefersReducedMotion ? {} : item} className="mb-6">
-          <div className="inline-flex items-center space-x-2 bg-accent/10 border border-accent/30 rounded-full px-4 py-2">
-            <Users className="w-4 h-4 text-accent" />
-            <span className="text-accent text-sm font-medium">Trusted by 100+ Enterprises</span>
+          
+          <div className="inline-flex items-center space-x-2 bg-transparent-100 border border-gray-300 text-gray-400 rounded-full px-4 py-2">
+
+            <Users className="w-4 h-4 text-yellow-500" />
+            <span className="text-gray text-sm font-medium">Trusted by 100+ Enterprises</span>
           </div>
         </motion.div>
 
         <motion.h1
           variants={prefersReducedMotion ? {} : item}
-          // className="text-2xl sm:text-1xl lg:text-3xl font-semibold text-white mb-6 leading-tight"
+          
           className="text-3xl sm:text-4xl lg:text-3xl font-bold text-white mb-12 pt-5 leading-tight tracking-tight drop-shadow-sm"
 
         >

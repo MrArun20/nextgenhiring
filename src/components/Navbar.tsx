@@ -62,15 +62,17 @@ export function Navbar() {
               //   {link.label}
               // </Link>
 
-             <Link
+   <Link
   key={link.to}
   to={link.to}
-className={cn(
-  'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border-b-2 border-transparent',
-  location.pathname === link.to
-    ? 'text-white border-yellow-400'                 // ACTIVE → white text + underline stays
-    : 'text-yellow-400 hover:text-white hover:border-yellow-400' // INACTIVE → yellow text, white only on hover
-)}
+  className={cn(
+    'px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 border-b-2 border-transparent',
+    (link.to === '/'
+      ? location.pathname === '/'
+      : location.pathname.startsWith(link.to))
+      ? 'text-white border-yellow-400'
+      : 'text-yellow-400 hover:text-white hover:border-yellow-400'
+  )}
 >
   {link.label}
 </Link>
