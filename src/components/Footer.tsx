@@ -21,6 +21,7 @@ export function Footer() {
               Your trusted staffing and workforce delivery partner across India. We hire, train, and deploy at scale.
             </p>
             <p className="text-gray-400 text-sm leading-relaxed font-semibold pt-5">CEO : Sampath Nomula</p>
+            <p className="text-gray-400 text-sm leading-relaxed font-semibold pt-5">Managing Director : Karunakar Balannagari</p>
           </div>
 
           <div>
