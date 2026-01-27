@@ -40,46 +40,46 @@ export function QuickApplyModal({ job, isOpen, onClose, onSubmit }: QuickApplyMo
   //   reset();
   //   onClose();
   // };
-// ----------------------------------->For sending email to user after applying----------------------------------->
+  // ----------------------------------->For sending email to user after applying----------------------------------->
   // const handleFormSubmit = async (data: ApplyFormData) => {
   //   try {
-      // Save application to backend
-      // await onSubmit(data);
+  // Save application to backend
+  // await onSubmit(data);
 
-      // // Send confirmation email using EmailJS
-      // await emailjs.send(
-      //   import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      //   import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
-      //   {
-      //     name: data.name,
-      //     email: data.email,
-      //     jobTitle: job.title,
-      //     phone: data.phone,
-      //     city: data.city,
-      //     experience: data.experience,
-    //        html: `
-    //   <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.5; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
-        
-    //     <!-- Logo -->
-    //     <div style="text-align: center; margin-bottom: 20px;">
-    //       <img src="/assets/next_genlogo2.png" alt="Company Logo" style="width:150px; height:auto;" />
-    //     </div>
-        
-    //     <!-- Greeting -->
-    //     <h2 style="color: #1a1a1a;">Hello ${data.name},</h2>
-        
-    //     <!-- Message -->
-    //     <p>Thank you for Applying <b>${job.title}</b>. We have received your request and our team will get back to you shortly.</p>
+  // // Send confirmation email using EmailJS
+  // await emailjs.send(
+  //   import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  //   import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID,
+  //   {
+  //     name: data.name,
+  //     email: data.email,
+  //     jobTitle: job.title,
+  //     phone: data.phone,
+  //     city: data.city,
+  //     experience: data.experience,
+  //        html: `
+  //   <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.5; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
 
-        
-    //     <!-- Footer -->
-    //     <p style="margin-top: 30px; font-size: 0.9em; color: #555;">Best regards,<br/>
-    //     <b>NextGen Hiring Solutions Team</b></p>
-    //   </div>
-    // `
-      //   },
-      //   import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      // );
+  //     <!-- Logo -->
+  //     <div style="text-align: center; margin-bottom: 20px;">
+  //       <img src="/assets/next_genlogo2.png" alt="Company Logo" style="width:150px; height:auto;" />
+  //     </div>
+
+  //     <!-- Greeting -->
+  //     <h2 style="color: #1a1a1a;">Hello ${data.name},</h2>
+
+  //     <!-- Message -->
+  //     <p>Thank you for Applying <b>${job.title}</b>. We have received your request and our team will get back to you shortly.</p>
+
+
+  //     <!-- Footer -->
+  //     <p style="margin-top: 30px; font-size: 0.9em; color: #555;">Best regards,<br/>
+  //     <b>NextGen Hiring Solutions Team</b></p>
+  //   </div>
+  // `
+  //   },
+  //   import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+  // );
 
   //     reset();
   //     onClose();
@@ -89,37 +89,37 @@ export function QuickApplyModal({ job, isOpen, onClose, onSubmit }: QuickApplyMo
   //   }
   // };
 
-// ------------------------------>
+  // ------------------------------>
 
-const handleFormSubmit = async (data: ApplyFormData) => {
-  try {
-    // Save application to backend
-    await onSubmit(data);
+  const handleFormSubmit = async (data: ApplyFormData) => {
+    try {
+      // Save application to backend
+      await onSubmit(data);
 
-    // Send application details to your email
-    await emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID, // template for admin notification
-      {
-        to_email:"nextgenhire406@gmail.com",
-        applicantName: data.name,
-        applicantEmail: data.email,
-        jobTitle: job.title,
-        phone: data.phone,
-        city: data.city,
-        experience: data.experience,
-        resumeLink: data.resumeLink || "Not provided",
-      },
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    );
+      // Send application details to your email
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID, // template for admin notification
+        {
+          to_email: "nextgenhire406@gmail.com",
+          applicantName: data.name,
+          applicantEmail: data.email,
+          jobTitle: job.title,
+          phone: data.phone,
+          city: data.city,
+          experience: data.experience,
+          resumeLink: data.resumeLink || "Not provided",
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
 
-    reset();
-    onClose();
-  } catch (error) {
-    console.error('Error submitting application or sending email:', error);
-    alert('Something went wrong. Please try again.');
-  }
-};
+      reset();
+      onClose();
+    } catch (error) {
+      console.error('Error submitting application or sending email:', error);
+      alert('Something went wrong. Please try again.');
+    }
+  };
 
   if (!isOpen) return null;
 
